@@ -586,6 +586,13 @@
     gtag('js', new Date());
 
     gtag('config', 'G-P83KNHYFM1');
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const ref = urlParams.get('ref');
+
+    gtag('event', 'screen_view', {
+        'referrer': ref,
+    });
   </script>
 
   <script type="text/javascript">
