@@ -590,7 +590,7 @@
     const urlParams = new URLSearchParams(queryString);
     const ref = urlParams.get('ref');
 
-    gtag('event', 'screen_view', {
+    gtag('event', 'source', {
         'referrer': ref,
     });
   </script>
